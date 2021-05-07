@@ -4,8 +4,18 @@ public class GKolmkola extends Kolmkolad{
     }
 
     @Override
-    public void mathTerts(){
-        this.terts = this.pohitoon + 4;
-        System.out.println("Uus terts on" + this.terts);
+    public void mathPohitoon(){
+        System.out.println("G põhitoon on: "+ this.pohitoon);
     }
+
+    @Override
+    public void mathTerts(){
+        System.out.println("G terts on: " + this.terts);
+    }
+
+    @Override
+    public void mathKvint(){
+        System.out.println("G kvint on: "+this.kvint);
+    }
+    
 }
