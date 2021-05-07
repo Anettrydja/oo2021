@@ -1,24 +1,28 @@
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        CKolmkola cKolmkola = new CKolmkola(60, 64, 67);
+
+        Scanner sisse = new Scanner(System.in);
+        System.out.println("Sisesta arv: ");
+        int pohitoon = sisse.nextInt();
+        int terts = pohitoon + 4;
+        int kvint = pohitoon + 7;
+
+        CKolmkola cKolmkola = new CKolmkola(pohitoon, terts, kvint);
         cKolmkola.mathPohitoon();
         cKolmkola.mathTerts();
         cKolmkola.mathKvint();
 
-        FKolmkola fKolmkola = new FKolmkola(65, 69, 72);
+        FKolmkola fKolmkola = new FKolmkola(pohitoon, terts, kvint);
         fKolmkola.mathPohitoon();
         fKolmkola.mathTerts();
         fKolmkola.mathKvint();
 
-        GKolmkola gKolmkola = new GKolmkola(67, 71, 74);
+        GKolmkola gKolmkola = new GKolmkola(pohitoon, terts, kvint);
         gKolmkola.mathPohitoon();
         gKolmkola.mathTerts();
         gKolmkola.mathKvint();
-
-
-
         
     }
 }
